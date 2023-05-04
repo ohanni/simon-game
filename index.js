@@ -45,7 +45,7 @@ function checkAnswer(currentLevel){
         var audio=new Audio("sounds/wrong.mp3");
         audio.play();
         $("body").addClass("game-over"); //changes the background color 
-        $("#top h1").text("Game Over, Press A Key to Start Over");
+        $("#top h1").text("Game Over, Press A Key/Click Me to Start Over");
         setTimeout(function(){
             $("body").removeClass("game-over");
         }, 200);
