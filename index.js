@@ -14,6 +14,13 @@ $(".btn").click(function() {
     checkAnswer((userClickedPattern.length-1));// checks answer for every button clicks so no cheating loli
 
 });
+// event detecter for mobile phone
+$("#top h1").click(function(){
+    if (on){
+        nextSequence();
+    }
+});
+
 $(document).keypress(function(){
     if (on){
         nextSequence();
